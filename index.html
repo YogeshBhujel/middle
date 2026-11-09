@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maison Tempo – Shop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ann">Free UK delivery over £100 · 30-day returns</div>
+<header><div class="wrap bar">
+<a class="logo" href="#/">MAISON TEMPO</a>
+<nav id="nav"><a href="#/shop" data-r="shop">Shop</a><a href="#/about" data-r="about">About</a><a href="#/contact" data-r="contact">Contact</a></nav>
+<button class="bagbtn" id="bagbtn">Bag (<span id="n">0</span>)</button>
+</div></header>
+
+<main id="top"><div id="v-home">
+<section class="slider" id="hero" aria-roledescription="carousel" aria-label="Featured collections"></section>
+<div class="perks"><div>Free UK delivery over £100</div><div>30-day easy returns</div><div>Natural, responsible fabrics</div><div>5-year repair promise</div></div>
+
+<section class="shop" id="shop"><div class="wrap">
+<h2>Shop all</h2><p class="sub">56 pieces. Select any item to see sizes, colours, fabric and care.</p>
+<div class="tools">
+<div class="chips" id="chips"></div>
+<input type="search" id="q" placeholder="Search products" aria-label="Search products">
+<select id="sort" aria-label="Sort"><option value="feat">Featured</option><option value="lo">Price: low to high</option><option value="hi">Price: high to low</option><option value="top">Top rated</option></select>
+</div>
+<div class="count" id="count"></div>
+<div class="grid" id="grid"></div>
+</div></section>
+
+<section class="about" id="about"><div class="wrap">
+<h2>Slow fashion, carefully made.</h2>
+<p>Every garment starts with the fabric: organic cotton, linen and responsibly sourced wool, cut in small batches by makers we know by name. We repair what we sell, for five years.</p>
+<p style="margin-top:22px"><a class="btn out" href="#/about">Read our story</a></p>
+</div></section>
+<section class="visit" id="visit"><div class="wrap"><h2>Find us</h2><p class="sub">Come and try things on. We are open six days a week.</p><div id="visitmap"></div></div></section></div><div id="v-page" hidden></div></main>
+
+<footer><div class="wrap">
+<div class="fg">
+<div><a class="logo" href="#/" style="display:inline-block;margin-bottom:10px">MAISON TEMPO</a><p style="color:var(--mute);max-width:320px;font-size:15px">Considered clothing for everyday life.</p></div>
+<div><h4>Shop</h4><ul><li><a href="#/shop">All products</a></li><li><a href="#/shop/Dresses">Dresses</a></li><li><a href="#/shop/Men">Men</a></li><li><a href="#/shop/Shoes">Shoes</a></li></ul></div>
+<div><h4>Help</h4><ul><li><a href="#/shipping">Shipping and returns</a></li><li><a href="#/size-guide">Size guide</a></li><li><a href="#/about">About us</a></li><li><a href="#/contact">Contact</a></li></ul></div>
+<div><h4>Visit</h4><ul><li>12 Linden Street, London E1 6AN</li><li>Mon–Sat, 10–6</li><li><a href="mailto:hello@maisontempo.com">hello@maisontempo.com</a></li><li><a href="tel:+442079460000">+44 20 7946 0000</a></li></ul></div>
+</div>
+<div class="copy"><span>© 2026 Maison Tempo</span><span><a href="#/privacy">Privacy</a> · <a href="#/terms">Terms</a></span></div>
+</div></footer>
+
+<div class="ov" id="ov"></div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Product details"></div>
+<aside class="drawer" id="drawer" aria-label="Shopping bag">
+<div class="dh"><h3>Your bag</h3><button id="dx" aria-label="Close bag">×</button></div>
+<div class="items" id="items"></div>
+<div class="df"><div class="tot"><span>Subtotal</span><span id="sub">£0</span></div><p id="ship"></p><button class="btn" id="co">Checkout</button></div>
+</aside>
+<div id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
